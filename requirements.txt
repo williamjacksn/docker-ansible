@@ -10,12 +10,22 @@ ansible==5.0.1
     # via -r requirements.in
 ansible-core==2.12.1
     # via ansible
+boto3==1.20.21
+    # via -r requirements.in
+botocore==1.23.21
+    # via
+    #   boto3
+    #   s3transfer
 cffi==1.15.0
     # via cryptography
 cryptography==36.0.0
     # via ansible-core
 jinja2==3.0.3
     # via ansible-core
+jmespath==0.10.0
+    # via
+    #   boto3
+    #   botocore
 markupsafe==2.0.1
     # via jinja2
 packaging==21.3
@@ -24,7 +34,15 @@ pycparser==2.21
     # via cffi
 pyparsing==3.0.6
     # via packaging
+python-dateutil==2.8.2
+    # via botocore
 pyyaml==6.0
     # via ansible-core
 resolvelib==0.5.4
     # via ansible-core
+s3transfer==0.5.0
+    # via boto3
+six==1.16.0
+    # via python-dateutil
+urllib3==1.26.7
+    # via botocore
