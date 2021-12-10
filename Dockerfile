@@ -13,4 +13,4 @@ ENV PATH="/home/python/venv/bin:${PATH}" \
     TZ="Etc/UTC"
 
 LABEL org.opencontainers.image.authors="William Jackson <william@subtlecoolness.com>" \
-      org.opencontainers.iamge.source="https://github.com/williamjacksn/docker-ansible"
+      org.opencontainers.image.source="https://github.com/williamjacksn/docker-ansible"
