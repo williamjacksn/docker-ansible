@@ -34,6 +34,8 @@ lockfile==0.12.2
     # via python-daemon
 markupsafe==2.1.0
     # via jinja2
+notch==0.0.1
+    # via -r requirements.in
 packaging==21.3
     # via ansible-core
 pexpect==4.8.0
