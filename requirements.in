@@ -4,4 +4,5 @@ ansible
 ansible-runner
 boto3
 notch
+pywinrm
 thysecser
