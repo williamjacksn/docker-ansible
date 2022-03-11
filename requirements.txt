@@ -70,7 +70,7 @@ six==1.16.0
     # via
     #   ansible-runner
     #   python-dateutil
-thysecser==2022.1
+thysecser==2022.2
     # via -r requirements.in
 urllib3==1.26.8
     # via
