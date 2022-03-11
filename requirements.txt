@@ -18,12 +18,18 @@ botocore==1.24.17
     # via
     #   boto3
     #   s3transfer
+certifi==2021.10.8
+    # via requests
 cffi==1.15.0
     # via cryptography
+charset-normalizer==2.0.12
+    # via requests
 cryptography==36.0.1
     # via ansible-core
 docutils==0.18.1
     # via python-daemon
+idna==3.3
+    # via requests
 jinja2==3.0.3
     # via ansible-core
 jmespath==0.10.0
@@ -54,6 +60,8 @@ pyyaml==6.0
     # via
     #   ansible-core
     #   ansible-runner
+requests==2.27.1
+    # via thysecser
 resolvelib==0.5.4
     # via ansible-core
 s3transfer==0.5.2
@@ -62,8 +70,12 @@ six==1.16.0
     # via
     #   ansible-runner
     #   python-dateutil
+thysecser==2022.1
+    # via -r requirements.in
 urllib3==1.26.8
-    # via botocore
+    # via
+    #   botocore
+    #   requests
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
