@@ -8,13 +8,13 @@
 
 ansible==5.5.0
     # via -r requirements.in
-ansible-core==2.12.3
+ansible-core==2.12.4
     # via ansible
 ansible-runner==2.1.3
     # via -r requirements.in
-boto3==1.21.27
+boto3==1.21.30
     # via -r requirements.in
-botocore==1.24.27
+botocore==1.24.30
     # via
     #   boto3
     #   s3transfer
@@ -32,7 +32,7 @@ docutils==0.18.1
     # via python-daemon
 idna==3.3
     # via requests
-jinja2==3.0.3
+jinja2==3.1.1
     # via ansible-core
 jmespath==1.0.0
     # via
