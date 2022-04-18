@@ -54,7 +54,7 @@ ptyprocess==0.7.0
     # via pexpect
 pycparser==2.21
     # via cffi
-pyparsing==3.0.7
+pyparsing==3.0.8
     # via packaging
 python-daemon==2.3.0
     # via ansible-runner
