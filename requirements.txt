@@ -10,7 +10,7 @@ ansible==5.7.1
     # via -r requirements.in
 ansible-core==2.12.5
     # via ansible
-ansible-runner==2.1.3
+ansible-runner==2.2.0
     # via -r requirements.in
 boto3==1.22.4
     # via -r requirements.in
@@ -47,7 +47,9 @@ notch==2022.1
 ntlm-auth==1.5.0
     # via requests-ntlm
 packaging==21.3
-    # via ansible-core
+    # via
+    #   ansible-core
+    #   ansible-runner
 pexpect==4.8.0
     # via ansible-runner
 ptyprocess==0.7.0
