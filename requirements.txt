@@ -10,7 +10,7 @@ ansible==5.9.0
     # via -r requirements.in
 ansible-core==2.12.6
     # via ansible
-ansible-runner==2.2.0
+ansible-runner==2.2.1
     # via -r requirements.in
 boto3==1.24.12
     # via -r requirements.in
