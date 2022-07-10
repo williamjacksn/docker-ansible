@@ -20,15 +20,15 @@ botocore==1.27.26
     #   s3transfer
 certifi==2022.6.15
     # via requests
-cffi==1.15.0
+cffi==1.15.1
     # via cryptography
 charset-normalizer==2.1.0
     # via requests
-cryptography==37.0.2
+cryptography==37.0.4
     # via
     #   ansible-core
     #   requests-ntlm
-docutils==0.18.1
+docutils==0.19
     # via python-daemon
 idna==3.3
     # via requests
@@ -86,7 +86,7 @@ six==1.16.0
     #   pywinrm
 thysecser==2022.4
     # via -r requirements.in
-urllib3==1.26.9
+urllib3==1.26.10
     # via
     #   botocore
     #   requests
