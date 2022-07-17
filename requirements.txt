@@ -6,15 +6,15 @@
 #
 --extra-index-url https://alpine-wheels.github.io/index
 
-ansible==6.0.0
+ansible==6.1.0
     # via -r requirements.in
 ansible-core==2.13.1
     # via ansible
 ansible-runner==2.2.1
     # via -r requirements.in
-boto3==1.24.26
+boto3==1.24.31
     # via -r requirements.in
-botocore==1.27.26
+botocore==1.27.31
     # via
     #   boto3
     #   s3transfer
