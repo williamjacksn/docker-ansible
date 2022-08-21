@@ -8,13 +8,13 @@
 
 ansible==6.2.0
     # via -r requirements.in
-ansible-core==2.13.2
+ansible-core==2.13.3
     # via ansible
 ansible-runner==2.2.1
     # via -r requirements.in
-boto3==1.24.46
+boto3==1.24.56
     # via -r requirements.in
-botocore==1.27.46
+botocore==1.27.56
     # via
     #   boto3
     #   s3transfer
@@ -22,7 +22,7 @@ certifi==2022.6.15
     # via requests
 cffi==1.15.1
     # via cryptography
-charset-normalizer==2.1.0
+charset-normalizer==2.1.1
     # via requests
 cryptography==37.0.4
     # via
