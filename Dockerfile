@@ -8,8 +8,8 @@ RUN /usr/local/bin/python -m venv /home/python/venv
 COPY --chown=python:python requirements.txt /home/python/docker-ansible/requirements.txt
 RUN /home/python/venv/bin/pip install --no-cache-dir --requirement /home/python/docker-ansible/requirements.txt
 
-COPY --chown=python:python digicert-tls-rsa-sha256-2020-ca1.cer /home/python/thycotic-secret-server-api/digicert-tls-rsa-sha256-2020-ca1.cer
-RUN /bin/cat /home/python/thycotic-secret-server-api/digicert-tls-rsa-sha256-2020-ca1.cer >> /home/python/venv/lib/python3.10/site-packages/certifi/cacert.pem
+COPY --chown=python:python digicert-tls-rsa-sha256-2020-ca1.cer /home/python/docker-ansible/digicert-tls-rsa-sha256-2020-ca1.cer
+RUN /bin/cat /home/python/docker-ansible/digicert-tls-rsa-sha256-2020-ca1.cer >> /home/python/venv/lib/python3.10/site-packages/certifi/cacert.pem
 
 ENV PATH="/home/python/venv/bin:${PATH}" \
     PYTHONDONTWRITEBYTECODE="1" \
