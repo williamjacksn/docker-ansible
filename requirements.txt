@@ -8,7 +8,7 @@
 
 ansible==6.3.0
     # via -r requirements.in
-ansible-core==2.13.3
+ansible-core==2.13.4
     # via ansible
 ansible-runner==2.2.1
     # via -r requirements.in
