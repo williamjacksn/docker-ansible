@@ -6,19 +6,19 @@
 #
 --extra-index-url https://alpine-wheels.github.io/index
 
-ansible==6.3.0
+ansible==6.4.0
     # via -r requirements.in
 ansible-core==2.13.4
     # via ansible
 ansible-runner==2.2.1
     # via -r requirements.in
-boto3==1.24.71
+boto3==1.24.75
     # via -r requirements.in
-botocore==1.27.71
+botocore==1.27.75
     # via
     #   boto3
     #   s3transfer
-certifi==2022.6.15.1
+certifi==2022.9.14
     # via requests
 cffi==1.15.1
     # via cryptography
@@ -30,7 +30,7 @@ cryptography==38.0.1
     #   requests-ntlm
 docutils==0.19
     # via python-daemon
-idna==3.3
+idna==3.4
     # via requests
 jinja2==3.1.2
     # via ansible-core
