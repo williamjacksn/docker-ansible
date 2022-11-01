@@ -1,5 +1,8 @@
 FROM python:3.10.7-alpine3.16
 
+# ansible needs to ssh to managed machines
+RUN /sbin/apk add --no-cache openssh-client-default
+
 RUN /usr/sbin/adduser -g python -D python
 
 USER python
