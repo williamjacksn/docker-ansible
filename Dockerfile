@@ -1,4 +1,4 @@
-FROM python:3.11.2-alpine3.16
+FROM python:3.11.2-alpine3.17
 
 # ansible needs to ssh to managed machines
 RUN /sbin/apk add --no-cache openssh-client-default
