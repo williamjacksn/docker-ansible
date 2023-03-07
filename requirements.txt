@@ -58,6 +58,8 @@ paramiko==3.0.0
     # via -r requirements.in
 pexpect==4.8.0
     # via ansible-runner
+psycopg2==2.9.5
+    # via -r requirements.in
 ptyprocess==0.7.0
     # via pexpect
 pycparser==2.21
