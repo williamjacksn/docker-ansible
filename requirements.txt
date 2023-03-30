@@ -6,17 +6,17 @@
 #
 --extra-index-url https://alpine-wheels.github.io/index
 
-ansible==7.3.0
+ansible==7.4.0
     # via -r requirements.in
-ansible-core==2.14.3
+ansible-core==2.14.4
     # via ansible
 ansible-runner==2.3.2
     # via -r requirements.in
 bcrypt==4.0.1
     # via paramiko
-boto3==1.26.99
+boto3==1.26.102
     # via -r requirements.in
-botocore==1.29.99
+botocore==1.29.102
     # via
     #   boto3
     #   s3transfer
@@ -28,7 +28,7 @@ cffi==1.15.1
     #   pynacl
 charset-normalizer==3.1.0
     # via requests
-cryptography==39.0.2
+cryptography==40.0.1
     # via
     #   ansible-core
     #   paramiko
