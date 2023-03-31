@@ -1,5 +1,8 @@
 FROM python:3.11.2-alpine3.17
 
+# ansible-test (sanity) needs git
+RUN /sbin/apk add --no-cache git
+
 # ansible needs to ssh to managed machines
 RUN /sbin/apk add --no-cache openssh-client-default
 
