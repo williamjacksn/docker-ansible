@@ -34,7 +34,7 @@ cryptography==41.0.0
     #   paramiko
     #   pyspnego
     #   requests-ntlm
-docutils==0.19
+docutils==0.20.1
     # via python-daemon
 idna==3.4
     # via requests
