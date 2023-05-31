@@ -87,7 +87,7 @@ requests-ntlm==1.2.0
     # via pywinrm
 resolvelib==1.0.1
     # via ansible-core
-s3transfer==0.6.0
+s3transfer==0.6.1
     # via boto3
 six==1.16.0
     # via
