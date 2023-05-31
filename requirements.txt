@@ -50,7 +50,7 @@ markupsafe==2.1.2
     # via jinja2
 notch==2022.1
     # via -r requirements.in
-packaging==23.0
+packaging==23.1
     # via
     #   ansible-core
     #   ansible-runner
