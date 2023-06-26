@@ -6,9 +6,9 @@
 #
 --extra-index-url https://alpine-wheels.github.io/index
 
-ansible==8.0.0
+ansible==8.1.0
     # via -r requirements.in
-ansible-core==2.15.0
+ansible-core==2.15.1
     # via ansible
 ansible-runner==2.3.3
     # via -r requirements.in
