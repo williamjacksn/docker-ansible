@@ -74,7 +74,7 @@ python-dateutil==2.8.2
     # via botocore
 pywinrm==0.4.3
     # via -r requirements.in
-pyyaml==6.0
+pyyaml==6.0.1
     # via
     #   ansible-core
     #   ansible-runner
