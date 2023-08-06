@@ -14,9 +14,9 @@ ansible-runner==2.3.3
     # via -r requirements.in
 bcrypt==4.0.1
     # via paramiko
-boto3==1.28.15
+boto3==1.28.20
     # via -r requirements.in
-botocore==1.31.15
+botocore==1.31.20
     # via
     #   boto3
     #   s3transfer
@@ -28,7 +28,7 @@ cffi==1.15.1
     #   pynacl
 charset-normalizer==3.2.0
     # via requests
-cryptography==41.0.2
+cryptography==41.0.3
     # via
     #   ansible-core
     #   paramiko
@@ -58,7 +58,7 @@ paramiko==3.3.1
     # via -r requirements.in
 pexpect==4.8.0
     # via ansible-runner
-psycopg2==2.9.6
+psycopg2==2.9.7
     # via -r requirements.in
 ptyprocess==0.7.0
     # via pexpect
@@ -74,7 +74,7 @@ python-dateutil==2.8.2
     # via botocore
 pywinrm==0.4.3
     # via -r requirements.in
-pyyaml==6.0
+pyyaml==6.0.1
     # via
     #   ansible-core
     #   ansible-runner
