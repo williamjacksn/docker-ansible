@@ -14,9 +14,9 @@ ansible-runner==2.3.4
     # via -r requirements.in
 bcrypt==4.0.1
     # via paramiko
-boto3==1.28.73
+boto3==1.28.78
     # via -r requirements.in
-botocore==1.31.73
+botocore==1.31.78
     # via
     #   boto3
     #   s3transfer
@@ -26,7 +26,7 @@ cffi==1.16.0
     # via
     #   cryptography
     #   pynacl
-charset-normalizer==3.3.1
+charset-normalizer==3.3.2
     # via requests
 cryptography==41.0.5
     # via
