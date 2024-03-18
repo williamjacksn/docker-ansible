@@ -10,7 +10,7 @@ ansible==9.3.0
     # via -r requirements.in
 ansible-core==2.16.4
     # via ansible
-ansible-runner==2.3.5
+ansible-runner==2.3.6
     # via -r requirements.in
 bcrypt==4.1.2
     # via paramiko
