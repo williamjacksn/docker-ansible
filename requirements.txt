@@ -95,7 +95,7 @@ six==1.16.0
     #   pywinrm
 thysecser==2022.4
     # via -r requirements.in
-urllib3==2.2.1
+urllib3==2.2.2
     # via
     #   botocore
     #   requests
