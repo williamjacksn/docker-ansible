@@ -14,9 +14,9 @@ ansible-runner==2.4.0
     # via -r requirements.in
 bcrypt==4.1.3
     # via paramiko
-boto3==1.34.131
+boto3==1.34.137
     # via -r requirements.in
-botocore==1.34.136
+botocore==1.34.137
     # via
     #   boto3
     #   s3transfer
