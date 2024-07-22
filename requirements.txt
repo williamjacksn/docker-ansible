@@ -72,7 +72,7 @@ python-daemon==3.0.1
     # via ansible-runner
 python-dateutil==2.9.0.post0
     # via botocore
-pywinrm==0.4.3
+pywinrm==0.5.0
     # via -r requirements.in
 pyyaml==6.0.1
     # via
@@ -90,9 +90,7 @@ resolvelib==1.0.1
 s3transfer==0.10.2
     # via boto3
 six==1.16.0
-    # via
-    #   python-dateutil
-    #   pywinrm
+    # via python-dateutil
 thysecser==2022.4
     # via -r requirements.in
 urllib3==2.2.2
