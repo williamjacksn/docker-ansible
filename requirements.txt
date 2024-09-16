@@ -54,7 +54,7 @@ packaging==24.1
     # via
     #   ansible-core
     #   ansible-runner
-paramiko==3.4.1
+paramiko==3.5.0
     # via -r requirements.in
 pexpect==4.9.0
     # via ansible-runner
