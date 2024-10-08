@@ -1,4 +1,4 @@
-FROM python:3.12-alpine
+FROM python:3.13-alpine
 
 # ansible-test (sanity) needs git
 RUN /sbin/apk add --no-cache git
