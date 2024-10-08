@@ -1,16 +1,16 @@
-FROM python:3.12-alpine
+FROM python:3.12-slim
 
 # ansible-test (sanity) needs git
-RUN /sbin/apk add --no-cache git
-
 # ansible needs to ssh to managed machines
-RUN /sbin/apk add --no-cache openssh-client-default
-
-# required for psycopg2, to use modules in the community.postgresql collection
+# libpq5 is required for psycopg2, to use modules in the community.postgresql collection
 # see https://docs.ansible.com/ansible/latest/collections/community/postgresql/index.html
-RUN /sbin/apk add --no-cache libpq
 
-RUN /usr/sbin/adduser -g python -D python
+ARG DEBIAN_FRONTEND=noninteractive
+RUN /usr/bin/apt-get update \
+ && /usr/bin/apt-get install --assume-yes git libpq5 openssh-client \
+ && rm -rf /var/lib/apt/lists/*
+
+RUN /usr/sbin/useradd --create-home --shell /bin/bash --user-group python
 
 USER python
 RUN /usr/local/bin/python -m venv /home/python/venv
