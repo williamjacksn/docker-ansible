@@ -4,8 +4,6 @@
 #
 #    pip-compile
 #
---extra-index-url https://alpine-wheels.github.io/index
-
 ansible==10.5.0
     # via -r requirements.in
 ansible-core==2.17.5
