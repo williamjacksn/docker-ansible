@@ -1,13 +1,11 @@
 FROM python:3.12-slim
 
 # ansible-test (sanity) needs git
-# ansible needs to ssh to managed machines
-# libpq5 is required for psycopg2, to use modules in the community.postgresql collection
-# see https://docs.ansible.com/ansible/latest/collections/community/postgresql/index.html
+# ansible needs openssh-client to ssh to managed machines
 
 ARG DEBIAN_FRONTEND=noninteractive
 RUN /usr/bin/apt-get update \
- && /usr/bin/apt-get install --assume-yes git libpq5 openssh-client \
+ && /usr/bin/apt-get install --assume-yes git openssh-client \
  && rm -rf /var/lib/apt/lists/*
 
 RUN /usr/sbin/useradd --create-home --shell /bin/bash --user-group python
