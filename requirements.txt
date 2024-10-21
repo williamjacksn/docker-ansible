@@ -44,7 +44,7 @@ jmespath==1.0.1
     #   botocore
 lockfile==0.12.2
     # via python-daemon
-markupsafe==3.0.1
+markupsafe==3.0.2
     # via jinja2
 notch==2023.1
     # via -r requirements.in
