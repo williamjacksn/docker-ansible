@@ -17,7 +17,7 @@ COPY --chown=python:python requirements.txt /home/python/docker-ansible/requirem
 RUN /home/python/venv/bin/pip install --no-cache-dir --requirement /home/python/docker-ansible/requirements.txt
 
 COPY --chown=python:python digicert-tls-rsa-sha256-2020-ca1.cer /home/python/docker-ansible/digicert-tls-rsa-sha256-2020-ca1.cer
-RUN /bin/cat /home/python/docker-ansible/digicert-tls-rsa-sha256-2020-ca1.cer >> /home/python/venv/lib/python3.12/site-packages/certifi/cacert.pem
+RUN /bin/cat /home/python/docker-ansible/digicert-tls-rsa-sha256-2020-ca1.cer >> /home/python/venv/lib/python3.13/site-packages/certifi/cacert.pem
 
 ENV PATH="/home/python/venv/bin:${PATH}" \
     PYTHONDONTWRITEBYTECODE="1" \
