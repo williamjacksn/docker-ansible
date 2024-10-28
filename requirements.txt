@@ -32,8 +32,6 @@ cryptography==43.0.3
     #   paramiko
     #   pyspnego
     #   requests-ntlm
-docutils==0.21.2
-    # via python-daemon
 idna==3.10
     # via requests
 jinja2==3.1.4
@@ -66,7 +64,7 @@ pynacl==1.5.0
     # via paramiko
 pyspnego==0.11.1
     # via requests-ntlm
-python-daemon==3.0.1
+python-daemon==3.1.0
     # via ansible-runner
 python-dateutil==2.9.0.post0
     # via botocore
