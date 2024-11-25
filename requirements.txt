@@ -10,7 +10,7 @@ ansible-core==2.18.0
     # via ansible
 ansible-runner==2.4.0
     # via -r requirements.in
-bcrypt==4.2.0
+bcrypt==4.2.1
     # via paramiko
 boto3==1.35.63
     # via -r requirements.in
