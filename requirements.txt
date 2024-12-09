@@ -85,7 +85,7 @@ resolvelib==1.0.1
     # via ansible-core
 s3transfer==0.10.4
     # via boto3
-six==1.16.0
+six==1.17.0
     # via python-dateutil
 thysecser==2022.4
     # via -r requirements.in
