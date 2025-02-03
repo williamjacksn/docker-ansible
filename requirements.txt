@@ -14,7 +14,7 @@ bcrypt==4.2.1
     # via paramiko
 boto3==1.36.6
     # via -r requirements.in
-botocore==1.36.8
+botocore==1.36.11
     # via
     #   boto3
     #   s3transfer
