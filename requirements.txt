@@ -89,7 +89,7 @@ six==1.17.0
     # via python-dateutil
 thysecser==2022.4
     # via -r requirements.in
-urllib3==2.3.0
+urllib3==2.4.0
     # via
     #   botocore
     #   requests
