@@ -87,7 +87,7 @@ s3transfer==0.12.0
     # via boto3
 six==1.17.0
     # via python-dateutil
-thysecser==2022.4
+thysecser==2025.0
     # via -r requirements.in
 urllib3==2.4.0
     # via
