@@ -1,14 +1,16 @@
 import argparse
 import boto3
 import botocore.exceptions
+import logging
 import notch
 import util
+
+notch.configure()
+log = logging.getLogger(__name__)
 
 parser = argparse.ArgumentParser(description='Find access keys for an AWS user account in all available profiles')
 parser.add_argument('username', help='The username to use when searching for access keys')
 args = parser.parse_args()
-
-log = notch.make_log('aws_get_access_keys')
 
 for profile_name in util.aws_profiles():
     log.info(f'Using profile {profile_name}')
