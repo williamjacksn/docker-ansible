@@ -1,8 +1,0 @@
-ansible
-ansible-runner
-boto3
-notch
-paramiko
-psycopg2-binary
-pywinrm
-thysecser

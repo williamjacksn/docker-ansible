@@ -1,0 +1,16 @@
+[project]
+name = "docker-ansible"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ansible>=11.6.0",
+    "ansible-runner>=2.4.1",
+    "boto3>=1.38.27",
+    "notch>=2025.2",
+    "paramiko>=3.5.1",
+    "psycopg2-binary>=2.9.10",
+    "pywinrm>=0.5.0",
+    "thysecser>=2025.0",
+]

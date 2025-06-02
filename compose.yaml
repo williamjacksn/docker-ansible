@@ -1,18 +1,8 @@
 services:
-  pip-compile:
-    entrypoint:
-      - /home/python/venv/bin/pip-compile
-    image: ghcr.io/williamjacksn/pip-tools:py3.13
-    init: true
-    volumes:
-      - ./:/home/python/docker-ansible
-    working_dir: /home/python/docker-ansible
-
   shell:
     entrypoint:
-      - /bin/sh
+      - /bin/bash
     image: ghcr.io/williamjacksn/ansible
     init: true
     volumes:
-      - ./:/home/python/docker-ansible
-    working_dir: /home/python/docker-ansible
+      - ./:/app
