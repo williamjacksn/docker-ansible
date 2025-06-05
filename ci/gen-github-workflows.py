@@ -1,16 +1,23 @@
 import gen
 
-image_name = "ghcr.io/williamjacksn/ansible"
 
-workflow = {
+image_push_events = ["push", "release", "workflow_dispatch"]
+image_push_if = " || ".join(f"github.event_name == '{e}'" for e in image_push_events)
+
+
+build = {
     "name": "Build the container image",
     "on": {
         "pull_request": {"branches": ["main"]},
         "push": {"branches": ["main"]},
+        "release": {"types": ["published"]},
         "workflow_dispatch": {},
     },
     "permissions": {},
-    "env": {"_workflow_file_generator": "ci/gen-github-workflows.py"},
+    "env": {
+        "_workflow_file_generator": "ci/gen-github-workflows.py",
+        "image_name": "ghcr.io/williamjacksn/ansible",
+    },
     "jobs": {
         "build": {
             "name": "Build the container image",
@@ -27,12 +34,12 @@ workflow = {
                     "with": {
                         "cache-from": "type=gha",
                         "cache-to": "type=gha,mode=max",
-                        "tags": f"{image_name}:latest",
+                        "tags": "${{ env.image_name }}:latest",
                     },
                 },
                 {
                     "name": "Log in to GitHub container registry",
-                    "if": "github.event_name == 'push' || github.event_name == 'release'",
+                    "if": image_push_if,
                     "uses": "docker/login-action@v3",
                     "with": {
                         "password": "${{ github.token }}",
@@ -42,12 +49,12 @@ workflow = {
                 },
                 {
                     "name": "Push latest image to registry",
-                    "if": "github.event_name == 'push' || github.event_name == 'release'",
+                    "if": image_push_if,
                     "uses": "docker/build-push-action@v6",
                     "with": {
                         "cache-from": "type=gha",
                         "push": True,
-                        "tags": f"{image_name}:latest",
+                        "tags": "${{ env.image_name }}:latest",
                     },
                 },
                 {
@@ -57,7 +64,7 @@ workflow = {
                     "with": {
                         "cache-from": "type=gha",
                         "push": True,
-                        "tags": image_name + ":${{ github.event.release.tag_name }}",
+                        "tags": "${{ env.image_name }}:${{ github.event.release.tag_name }}",
                     },
                 },
             ],
@@ -65,7 +72,7 @@ workflow = {
     },
 }
 
-gen.gen(workflow, ".github/workflows/build-container-image.yaml")
+gen.gen(build, ".github/workflows/build-container-image.yaml")
 
 ruff = {
     "name": "Ruff",
