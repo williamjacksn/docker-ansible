@@ -1,8 +1,14 @@
-services:
-  shell:
-    entrypoint:
-      - /bin/bash
-    image: ghcr.io/williamjacksn/ansible
-    init: true
-    volumes:
-      - ./:/app
+{
+  "services": {
+    "shell": {
+      "entrypoint": [
+        "/bin/bash"
+      ],
+      "image": "ghcr.io/williamjacksn/ansible",
+      "init": true,
+      "volumes": [
+        "./:/app"
+      ]
+    }
+  }
+}
