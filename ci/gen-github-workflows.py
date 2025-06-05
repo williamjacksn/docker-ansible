@@ -5,8 +5,8 @@ image_name = "ghcr.io/williamjacksn/ansible"
 workflow = {
     "name": "Build the container image",
     "on": {
-        "pull_request": {"branches": ["master"]},
-        "push": {"branches": ["master"]},
+        "pull_request": {"branches": ["main"]},
+        "push": {"branches": ["main"]},
         "workflow_dispatch": {},
     },
     "permissions": {},
@@ -69,7 +69,7 @@ gen.gen(workflow, ".github/workflows/build-container-image.yaml")
 
 ruff = {
     "name": "Ruff",
-    "on": {"pull_request": {"branches": ["master"]}, "push": {"branches": ["master"]}},
+    "on": {"pull_request": {"branches": ["main"]}, "push": {"branches": ["main"]}},
     "permissions": {"contents": "read"},
     "env": {
         "_workflow_file_generator": "ci/gen-github-workflows.py",
