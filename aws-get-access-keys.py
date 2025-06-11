@@ -1,8 +1,10 @@
 import argparse
+import logging
+
 import boto3
 import botocore.exceptions
-import logging
 import notch
+
 import util
 
 notch.configure()
