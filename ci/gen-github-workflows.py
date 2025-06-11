@@ -1,7 +1,7 @@
 import gen
 
 
-image_push_events = ["push", "release", "workflow_dispatch"]
+image_push_events = ["push", "workflow_dispatch"]
 image_push_if = " || ".join(f"github.event_name == '{e}'" for e in image_push_events)
 
 
@@ -10,7 +10,6 @@ build = {
     "on": {
         "pull_request": {"branches": ["main"]},
         "push": {"branches": ["main"]},
-        "release": {"types": ["published"]},
         "workflow_dispatch": {},
     },
     "permissions": {},
@@ -55,16 +54,6 @@ build = {
                         "cache-from": "type=gha",
                         "push": True,
                         "tags": "${{ env.image_name }}:latest",
-                    },
-                },
-                {
-                    "name": "Push release image to registry",
-                    "if": "github.event_name == 'release'",
-                    "uses": "docker/build-push-action@v6",
-                    "with": {
-                        "cache-from": "type=gha",
-                        "push": True,
-                        "tags": "${{ env.image_name }}:${{ github.event.release.tag_name }}",
                     },
                 },
             ],
