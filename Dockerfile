@@ -1,4 +1,4 @@
-FROM ghcr.io/astral-sh/uv:0.7.21-bookworm-slim
+FROM ghcr.io/astral-sh/uv:0.8.0-bookworm-slim
 
 # ansible-test (sanity) needs git
 # ansible needs openssh-client to ssh to managed machines
