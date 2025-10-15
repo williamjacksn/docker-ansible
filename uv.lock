@@ -32,7 +32,7 @@ wheels = [
 
 [[package]]
 name = "ansible-runner"
-version = "2.4.1"
+version = "2.4.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "packaging" },
@@ -40,9 +40,9 @@ dependencies = [
     { name = "python-daemon" },
     { name = "pyyaml" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/06/89/9426e3353829ab0c2f0277a14a6bc4d99d301b74533b0c901e7636794e45/ansible_runner-2.4.1.tar.gz", hash = "sha256:11d717da4dd8d93d56703a4a98e5f2154026a7ed1b46d9930902b8298dc67d09", size = 149599, upload-time = "2025-03-26T13:45:38.648Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/aa/db/65b9e058807d313c495a6f4365cc11234d0391c5843659ddc27cc4bf1677/ansible_runner-2.4.2.tar.gz", hash = "sha256:331d4da8d784e5a76aa9356981c0255f4bb1ba640736efe84b0bd7c73a4ca420", size = 152047, upload-time = "2025-10-14T19:10:50.159Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/1a/a7/59265056ce589f73f150e69dcc3666741c884c775b13f2bcdf2143d947d7/ansible_runner-2.4.1-py3-none-any.whl", hash = "sha256:ef4efe906414f6e9a4c2e41d131fabc3bfe952f16edded7bdc06d597b05f0eb6", size = 79558, upload-time = "2025-03-26T13:45:37.137Z" },
+    { url = "https://files.pythonhosted.org/packages/a9/da/19512e72e9cf2b8e7e6345264baa6c7ac1bb0ab128eb19c73a58407c4566/ansible_runner-2.4.2-py3-none-any.whl", hash = "sha256:0bde6cb39224770ff49ccdc6027288f6a98f4ed2ea0c64688b31217033221893", size = 79758, upload-time = "2025-10-14T19:10:48.994Z" },
 ]
 
 [[package]]
