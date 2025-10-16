@@ -4,6 +4,9 @@
       "entrypoint": [
         "/bin/bash"
       ],
+      "environment": {
+        "DESCRIPTION": "This file (compose.yaml) was generated from ci/gen.py"
+      },
       "image": "ghcr.io/williamjacksn/ansible",
       "init": true,
       "volumes": [
