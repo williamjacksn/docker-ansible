@@ -14,3 +14,8 @@ dependencies = [
     "pywinrm>=0.5.0",
     "thysecser>=2025.0",
 ]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.1",
+]
