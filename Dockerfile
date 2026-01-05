@@ -1,4 +1,4 @@
-FROM ghcr.io/astral-sh/uv:0.9.18-trixie-slim
+FROM ghcr.io/astral-sh/uv:0.9.21-trixie-slim
 
 # ansible-test (sanity) needs git
 # ansible needs openssh-client to ssh to managed machines
