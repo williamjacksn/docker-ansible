@@ -605,14 +605,14 @@ wheels = [
 
 [[package]]
 name = "thysecser"
-version = "2025.0"
+version = "2026.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "requests" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/8a/d2/27ae56d196b5c7c85c6615d753e3b2b389e80a1cd6e37dae811799776c4d/thysecser-2025.0.tar.gz", hash = "sha256:329d38063d90aab9a5e1eb9765794139a08da27033db83639db0bf26f7454ca2", size = 2316, upload-time = "2025-04-30T18:22:50.72Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e8/4b/74c1974284dec606fe9850f2bdbbf20af28f08036dff8d5ac006b097ffa7/thysecser-2026.0.tar.gz", hash = "sha256:d7b416acd5972601353691c78073b3e353abfbf31440b0490ca7fb2c4bf79add", size = 1840, upload-time = "2026-01-09T18:56:32.171Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/13/f3/3a086adb9e16351c06c32cdee40ccc9bb93a305116e253cdd2be93e12d87/thysecser-2025.0-py3-none-any.whl", hash = "sha256:5c319ec1cf4f14fea3cb6a026f02a147d3c131fba59de2743909c1647d1e74de", size = 2394, upload-time = "2025-04-30T18:22:49.564Z" },
+    { url = "https://files.pythonhosted.org/packages/81/e8/529d87b91f2931bc7c1b36897718cc63980eee75ba365c6b014bdb195905/thysecser-2026.0-py3-none-any.whl", hash = "sha256:b8de56399ece4d1a9e6a350cf20320a3cd2dfb37a37be5bd220723796132c0f2", size = 2433, upload-time = "2026-01-09T18:56:33.18Z" },
 ]
 
 [[package]]
