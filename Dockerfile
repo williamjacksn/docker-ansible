@@ -16,7 +16,7 @@ COPY --chown=python:python .python-version pyproject.toml uv.lock ./
 RUN uv sync --frozen --no-dev
 
 COPY --chown=python:python digicert-tls-rsa-sha256-2020-ca1.cer ./
-RUN /bin/cat /app/digicert-tls-rsa-sha256-2020-ca1.cer >> /app/.venv/lib/python3.13/site-packages/certifi/cacert.pem
+RUN /bin/cat /app/digicert-tls-rsa-sha256-2020-ca1.cer >> /app/.venv/lib/python3.14/site-packages/certifi/cacert.pem
 
 ENV PATH="/app/.venv/bin:${PATH}" \
     PYTHONDONTWRITEBYTECODE="1" \
